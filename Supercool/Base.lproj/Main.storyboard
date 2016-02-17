@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Supercool" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blue" translatesAutoresizingMaskIntoConstraints="NO" id="2Oe-T1-1AF">
+                                <rect key="frame" x="-28" y="-58" width="237" height="794"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="red" translatesAutoresizingMaskIntoConstraints="NO" id="gvt-Gf-6OS">
+                                <rect key="frame" x="209" y="-58" width="277" height="801"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="94H-Dr-Axq" userLabel="ShowOnlyRed">
+                                <rect key="frame" x="20" y="499.5" width="175" height="95.5"/>
+                                <state key="normal" title="Show only red"/>
+                                <connections>
+                                    <action selector="ShowRed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Agm-Qt-YhG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MWb-4e-zmf" userLabel="ShowOnlyBlue">
+                                <rect key="frame" x="224" y="499.5" width="154" height="95.5"/>
+                                <state key="normal" title="Show only blue"/>
+                                <connections>
+                                    <action selector="ShowBlue:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ao3-NI-99j"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xjg-ya-XTf">
+                                <rect key="frame" x="108" y="409" width="198" height="30"/>
+                                <state key="normal" title="Show Both"/>
+                                <connections>
+                                    <action selector="showBoth:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pdz-J7-iRc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N6y-5B-hNP">
+                                <rect key="frame" x="143" y="233" width="128" height="30"/>
+                                <state key="normal" title="Скрыть оба цвета"/>
+                                <connections>
+                                    <action selector="HideAll:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ihi-hR-WnX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="Blue_colour" destination="2Oe-T1-1AF" id="bcv-Oo-7fO"/>
+                        <outlet property="redColour" destination="gvt-Gf-6OS" id="Au8-QI-Lkj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="380" y="314"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="blue" width="1680" height="1050"/>
+        <image name="red" width="3508" height="2480"/>
+    </resources>
+</document>
